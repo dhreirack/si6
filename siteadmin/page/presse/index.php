@@ -18,7 +18,7 @@
             <tbody>
                 <?php
                 foreach ($lesArticles as $unArticle) {
-                   echo "<tr><td>".$unArticle->nomarticle."</td><td>".$unArticle->description."</td><td>".$unArticle->dtearticle."</td><td><a href=\"index.php?controller=news&action=delete&id=".$unArticle->idarticle."\">Supprimer</a>
+                   echo "<tr><td>".$unArticle->nomarticle."</td><td>".$unArticle->descriptionarticle."</td><td>".$unArticle->dtearticle."</td><td><a href=\"index.php?controller=presse&action=delete&id=".$unArticle->idarticle."\">Supprimer</a>
 </td></tr>";
                 }
 

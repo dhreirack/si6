@@ -22,6 +22,7 @@ class PressePdo extends MyPdo
 			$unArticle->nomarticle=$donnees["nomarticle"];
 			$unArticle->descriptionarticle=$donnees["descriptionarticle"];
 		  	$unArticle->dtearticle=$donnees["dtearticle"];
+		  	$unArticle->corpsarticle=$donnees["corpsarticle"];
 		  	$resultat[]=$unArticle;
 		}
 		$reponse->closeCursor(); 
@@ -31,10 +32,11 @@ class PressePdo extends MyPdo
  	public function create($unArticle){
  		try
 		{
-			$requete =$this->connection->prepare('INSERT INTO presse(nomarticle, descriptionarticle, dtearticle) VALUES(:nomarticle, :descriptionarticle, :dtearticle)');
-			$requete->bindValue(':nomarticle', $unArticle->titre, PDO::PARAM_STR);
-			$requete->bindValue(':descriptionarticle', $unArticle->description, PDO::PARAM_STR);
-			$requete->bindValue(':dtearticle', $unArticle->dte->format('Y-m-d'), PDO::PARAM_STR);
+			$requete =$this->connection->prepare('INSERT INTO presse(nomarticle, descriptionarticle, dtearticle, corpsarticle) VALUES(:nomarticle, :descriptionarticle, :dtearticle, :corpsarticle)');
+			$requete->bindValue(':nomarticle', $unArticle->nomarticle, PDO::PARAM_STR);
+			$requete->bindValue(':descriptionarticle', $unArticle->descriptionarticle, PDO::PARAM_STR);
+			$requete->bindValue(':dtearticle', $unArticle->dtearticle->format('Y-m-d'), PDO::PARAM_STR);
+			$requete->bindValue(':corpsarticle', $unArticle->corpsarticle, PDO::PARAM_STR);
 			$requete->execute();
 			/* ou mais moins pratique
 			$req= "INSERT INTO news(titre, description, dte) VALUES('".$uneNews->titre."','".$uneNews->description."','".$uneNews->dte->format('Y-m-d')."')";
@@ -47,7 +49,7 @@ class PressePdo extends MyPdo
  	}
  	 	public function delete($id){
  	 		
-		 	 		$requete =$this->connection->query('DELETE FROM presse WHERE id = ' .$id);
+		 	 		$requete =$this->connection->query('DELETE FROM presse WHERE idarticle = ' .$id);
 		 	 		$requete->execute();
 	}
 
