@@ -25,7 +25,14 @@ if(isset($_GET["action"]))
                 case 'index':
                         $lesUsers=$connection->getAll();
                         include("page/users/index.php");
-                        break;			
+                        break;	
+                case 'connection':
+                        $unUser=new User();
+                        $unUser->login=$_POST["login"];
+                        $unUser->pwd=$_POST["pwd"];
+                        $pdo=new UserPdo ();
+                        $connection=$pdo->rechercherutilisateur($unUser);
+
                 default:
                         include("page/users/index.php");
                         break;

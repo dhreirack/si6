@@ -158,7 +158,7 @@
                         <a href="index.php?controller=news"><i class="fa fa-fw fa-dashboard"></i> Gérer les news</a>
                     </li>
                     <li>
-                        <a href="index.php?controller=news"><i class="fa fa-fw fa-bar-chart-o"></i> Gérer la presse</a>
+                        <a href="index.php?controller=presse"><i class="fa fa-fw fa-bar-chart-o"></i> Gérer la presse</a>
                     </li>
                     <li>
                         <a href="index.php?controller=user"><i class="fa fa-fw fa-bar-chart-o"></i> Compte utilisateur</a>
@@ -211,7 +211,8 @@
 
     <!-- jQuery -->
     <script src="public/js/jquery.js"></script>
-
+     <script src="public/js/ckeditor/ckeditor.js"></script>
+      <script src="public/js/ckeditor/config.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="public/js/bootstrap.min.js"></script>
 
@@ -220,6 +221,16 @@
     <script src="public/js/plugins/morris/morris.min.js"></script>
     <script src="public/js/plugins/morris/morris-data.js"></script>
 
+    <script type="text/javascript">
+      CKEDITOR.replace( 'description' );
+  
+       
+    </script>
+    <script type="text/javascript">
+      CKEDITOR.replace( 'corpsarticle' );
+  
+       
+    </script>
 </body>
 
 </html>

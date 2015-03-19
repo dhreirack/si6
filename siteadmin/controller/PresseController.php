@@ -1,8 +1,50 @@
 <?php
+require_once "pdo/MyPdo.php";
+require_once "pdo/PressePdo.php";
+require_once "class/Presse.php";
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
+$connection = new PressePdo();
+
+//Si la variable $_GET["action"] existe
+if(isset($_GET["action"]))
+{
+        //Récupartion de l'action passée dans l'url
+        $action=$_GET["action"];
+
+        switch ($action) {
+                case 'create':
+                        include("page/presse/create.php");
+                        break;
+                case 'store':
+                        $unArticle=new Presse();
+                        $unArticle->nomarticle=$_POST["nomarticle"];
+                        $unArticle->descriptionarticle=$_POST["descriptionarticle"];
+                        $unArticle->corpsarticle=$_POST["corpsarticle"];
+
+                        $connection->create($unArticle);
+                        break;
+                case 'index':
+                        $lesArticles=$connection->getAll();
+                        include("page/presse/index.php");
+                        break;
+                case 'delete':
+
+                        $lesArticles=$connection->delete($_GET["id"]);
+                        break;
+                case 'modify':
+                        $lesArticles=$connection->id=["id"];
+                        include("page/presse/modify.php");
+                        break;			
+                default:
+                        include("page/presse/index.php");
+                        break;
+        }
+
+}
+//si pas d'action dans l'url
+else
+{       $lesArticles=$connection->getAll();
+        include("page/presse/index.php");
+}
+?>
