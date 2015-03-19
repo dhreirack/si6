@@ -155,10 +155,10 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li class="active">
-                        <a href="index.php?controller=news"><i class="fa fa-fw fa-dashboard"></i> Gérer les news</a>
+                        <a href="index.php?controller=news"><i class="fa fa-fw fa-dashboard"></i> News</a>
                     </li>
                     <li>
-                        <a href="index.php?controller=presse"><i class="fa fa-fw fa-bar-chart-o"></i> Gérer la presse</a>
+                        <a href="index.php?controller=presse"><i class="fa fa-fw fa-bar-chart-o"></i> Articles</a>
                     </li>
                     <li>
                         <a href="index.php?controller=user"><i class="fa fa-fw fa-bar-chart-o"></i> Compte utilisateur</a>
