@@ -47,8 +47,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">Site SI6</a>
-                <! texte au dessus à gauche-->
+                <a class="navbar-brand" href="index.php">Site PPE</a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
@@ -77,7 +76,7 @@
                                         <img class="media-object" src="http://placehold.it/50x50" alt="">
                                     </span>
                                     <div class="media-body">
-                                        <h5 class="media-heading"><strong>Sio1</strong>
+                                        <h5 class="media-heading"><strong>Andrew</strong>
                                         </h5>
                                         <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
                                         <p>Lorem ipsum dolor sit amet, consectetur...</p>
@@ -155,18 +154,11 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li class="active">
-                        <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Acceuil</a>
+                        <a href="index.php?controller=news"><i class="fa fa-fw fa-dashboard"></i> Gérer les news</a>
                     </li>
                     <li>
-                        <a href="index.php?controller=news"><i class="fa fa-fw fa-bar-chart-o"></i> News</a>
+                        <a href="index.php?controller=news"><i class="fa fa-fw fa-bar-chart-o"></i> Gérer la presse</a>
                     </li>
-                    <li>
-                        <a href="index.php?controller=presse"><i class="fa fa-fw fa-bar-chart-o"></i> Articles</a>
-                    </li>
-                    <li>
-                        <a href="index.php?controller=user"><i class="fa fa-fw fa-bar-chart-o"></i> Comptes utilisateurs</a>
-                    </li>
-
       </div>
             <!-- /.navbar-collapse -->
         </nav>
@@ -191,9 +183,6 @@
                                 case "presse":
                                     include("controller/PresseController.php");
                                     break;
-                                case "user":
-                                    include("controller/UserController.php");
-                                    break;
                             }
                           }
                            else {
@@ -215,8 +204,7 @@
 
     <!-- jQuery -->
     <script src="public/js/jquery.js"></script>
-     <script src="public/js/ckeditor/ckeditor.js"></script>
-      <script src="public/js/ckeditor/config.js"></script>
+
     <!-- Bootstrap Core JavaScript -->
     <script src="public/js/bootstrap.min.js"></script>
 
@@ -225,16 +213,6 @@
     <script src="public/js/plugins/morris/morris.min.js"></script>
     <script src="public/js/plugins/morris/morris-data.js"></script>
 
-    <script type="text/javascript">
-      CKEDITOR.replace( 'description' );
-  
-       
-    </script>
-    <script type="text/javascript">
-      CKEDITOR.replace( 'corpsarticle' );
-  
-       
-    </script>
 </body>
 
 </html>
