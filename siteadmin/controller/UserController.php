@@ -19,7 +19,7 @@ if(isset($_GET["action"]))
                 case 'store':
                         $unUser=new User();
                         $unUser->login=$_POST["login"];
-                        $unUser->password=md5($_POST["pwd"]);
+                        $unUser->pwd=md5($_POST["pwd"]);
                         $connection->create($unUser);
                         break;	
                 case 'delete':

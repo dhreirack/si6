@@ -35,6 +35,16 @@
 
 <body>
 
+        <?php
+    require 'class/News.php'; 
+    require 'class/Users.php';  
+    require 'pdo/MyPdo.php'; 
+    require 'pdo/NewsPdo.php'; 
+    require 'pdo/UserPdo.php';  
+    session_start();
+    ?>
+
+
     <div id="wrapper">
 
         <!-- Navigation -->
