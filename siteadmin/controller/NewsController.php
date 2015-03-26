@@ -20,7 +20,6 @@ if(isset($_GET["action"]))
                         $uneNews=new News();
                         $uneNews->titre=$_POST["titre"];
                         $uneNews->description=$_POST["description"];
-                        echo $uneNews->afficher();
                         $connection->create($uneNews);
                         break;
                 case 'delete':
