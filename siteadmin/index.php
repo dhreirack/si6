@@ -235,6 +235,16 @@
     <script src="public/js/plugins/morris/morris.min.js"></script>
     <script src="public/js/plugins/morris/morris-data.js"></script>
 
+    <script src="public/js/jquery.js" type="text/javascript"></script>
+    <script src="public/js/jquery.validationEngine.js" type="text/javascript"></script>  
+    <script src="public/js/jquery.validationEngine-fr.js" type="text/javascript"></script>  
+
+    <script>
+    $(document).ready(function(){
+        $("#createuser").validationEngine('attach');
+       });
+    </script>
+
     <script type="text/javascript">
       CKEDITOR.replace( 'description' );
   
