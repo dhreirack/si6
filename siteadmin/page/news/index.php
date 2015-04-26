@@ -9,16 +9,17 @@
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <td>titre</td>
-                    <td>description</td>
-                    <td>date</td>
-                    <td>modifications</td>
+                    <td><strong>Titre</strong></td>
+                    <td><strong>Description</strong></td>
+                    <td><strong>Date</strong></td>
+                    <td><strong>Modifications</strong></td>
                 </tr>
             </thead>
             <tbody>
                 <?php
                 foreach ($lesNews as $uneNews) {
                    echo "<tr><td>".$uneNews->titre."</td><td>".$uneNews->description."</td><td>".$uneNews->dte."</td><td><a href=\"index.php?controller=news&action=delete&id=".$uneNews->id."\">Supprimer</a>
+                   <td><a href=\"index.php?action=modify&id=".$uneNews->id."\">Modifier</a>
 </td></tr>";
                 }
 

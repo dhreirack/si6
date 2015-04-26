@@ -8,9 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Andrew">
+    <meta name="author" content="Groupe Bonvalot">
 
-    <title>Site SI6</title>
+    <title>Site PPE</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="public/css/bootstrap.min.css" rel="stylesheet">
@@ -57,8 +57,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">Site SI6</a>
-                <! texte au dessus à gauche-->
+                <a class="navbar-brand" href="index.php">Site PPE</a>
+                <!-- texte au dessus à gauche-->
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
@@ -102,7 +102,7 @@
                                         <img class="media-object" src="http://placehold.it/50x50" alt="">
                                     </span>
                                     <div class="media-body">
-                                        <h5 class="media-heading"><strong>Iseppi Andrew</strong>
+                                        <h5 class="media-heading"><strong>SIO1</strong>
                                         </h5>
                                         <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
                                         <p>Lorem ipsum dolor sit amet, consectetur...</p>
@@ -143,7 +143,7 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Iseppi Andrew <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>SIO1 <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
@@ -170,8 +170,14 @@
                     <li>
                         <a href="index.php?controller=news"><i class="fa fa-fw fa-bar-chart-o"></i> News</a>
                     </li>
+					<li>
+                        <a href="index.php?controller=histoire"><i class="fa fa-fw fa-bar-chart-o"></i> Histoire</a>
+                    </li>
+					<li>
+                        <a href="index.php?controller=but"><i class="fa fa-fw fa-bar-chart-o"></i> But</a>
+                    </li>
                     <li>
-                        <a href="index.php?controller=presse"><i class="fa fa-fw fa-bar-chart-o"></i> Articles</a>
+                        <a href="index.php?controller=presse"><i class="fa fa-fw fa-bar-chart-o"></i> Presse</a>
                     </li>
                     <li>
                         <a href="index.php?controller=user"><i class="fa fa-fw fa-bar-chart-o"></i> Comptes utilisateurs</a>

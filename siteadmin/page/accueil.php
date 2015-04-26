@@ -6,7 +6,7 @@ require_once "class/News.php";
 
 $connection = new NewsPdo();
 
-echo 'l accueil';
+echo 'Accueil';
 ?>
 
 <div class="row">
@@ -19,9 +19,9 @@ echo 'l accueil';
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <td>titre</td>
-                    <td>description</td>
-                    <td>date</td>
+                    <td><strong>Titre</td>
+                    <td><strong>Description</td>
+                    <td><strong>Date</td>
                 </tr>
             </thead>
             <tbody>

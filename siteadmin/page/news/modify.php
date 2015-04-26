@@ -1,23 +1,10 @@
-<?php
-// on se connecte à notre base
-$base = mysql_connect ('localhost', 'root', '');
-mysql_select_db ('si6', $base) ;
-?>
-<html>
-<head>
-<title>modif test 1</title>
-</head>
-<body>
-<?php
-// lancement de la requête
-$sql ='UPDATE news WHERE id = ".$id' ;
-
-// on exécute la requête (mysql_query) et on affiche un message au cas où la requête ne se passait pas bien (or die)
-mysql_query($sql) or die('Erreur SQL !'.$sql.'<br />'.mysql_error());
-
-// on ferme la connexion à la base
-mysql_close();
-?>
-un echo ici
-</body>
-</html>
+Bienvenue sur modifier une nouvelle
+<form action="index.php?action=update&id=<?php echo $lewnews->id ; ?>" enctype="multipart/form-data" method="post">
+	Titre : <input type="text" name="titre" value="<?php echo $lewnews->titre ; ?>">
+	Description : <input type="text" name="description"  value="<?php echo $lewnews->description ; ?>">
+	<!-- MAX_FILE_SIZE doit précéder le champ input de type file -->
+  <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+  <!-- Le nom de l'élément input détermine le nom dans le tableau $_FILES -->
+  Envoyez ce fichier : <input name="userfile" type="file" />
+  	<input type="submit">
+</form>
