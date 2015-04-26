@@ -8,9 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Groupe Bonvalot">
+    <meta name="author" content="Andrew Iseppi">
 
-    <title>Site PPE</title>
+    <title>Site SI6</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="public/css/bootstrap.min.css" rel="stylesheet">
@@ -57,7 +57,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">Site PPE</a>
+                <a class="navbar-brand" href="index.php">Site SI6</a>
                 <!-- texte au dessus à gauche-->
             </div>
             <!-- Top Menu Items -->
@@ -102,7 +102,7 @@
                                         <img class="media-object" src="http://placehold.it/50x50" alt="">
                                     </span>
                                     <div class="media-body">
-                                        <h5 class="media-heading"><strong>SIO1</strong>
+                                        <h5 class="media-heading"><strong>Andrew</strong>
                                         </h5>
                                         <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
                                         <p>Lorem ipsum dolor sit amet, consectetur...</p>
@@ -165,19 +165,13 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li class="active">
-                        <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Acceuil</a>
+                        <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Tableau de bord</a>
                     </li>
                     <li>
                         <a href="index.php?controller=news"><i class="fa fa-fw fa-bar-chart-o"></i> News</a>
                     </li>
-					<li>
-                        <a href="index.php?controller=histoire"><i class="fa fa-fw fa-bar-chart-o"></i> Histoire</a>
-                    </li>
-					<li>
-                        <a href="index.php?controller=but"><i class="fa fa-fw fa-bar-chart-o"></i> But</a>
-                    </li>
                     <li>
-                        <a href="index.php?controller=presse"><i class="fa fa-fw fa-bar-chart-o"></i> Presse</a>
+                        <a href="index.php?controller=presse"><i class="fa fa-fw fa-bar-chart-o"></i> Pages</a>
                     </li>
                     <li>
                         <a href="index.php?controller=user"><i class="fa fa-fw fa-bar-chart-o"></i> Comptes utilisateurs</a>
